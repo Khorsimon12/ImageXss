@@ -1,15 +1,11 @@
-<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-  <!-- SVG content -->
-  <rect width="100%" height="100%" fill="lightblue" />
+<svg width=”100%” height=”100%” viewBox=”0 0 100 100"
 
-  <!-- Embed HTML content -->
-  <foreignObject x="10" y="10" width="280" height="180">
-    <body xmlns="http://www.w3.org/1999/xhtml">
-      <div style="font-family: Arial, sans-serif; color: black;">
-        <h1>Embedded HTML</h1>
-        <p>This is an example of HTML content embedded within an SVG image.</p>
-        <button onclick="alert('Button Clicked!')">Click Me</button>
-      </div>
-    </body>
-  </foreignObject>
+xmlns=”http://www.w3.org/2000/svg" xmlns:xlink=”http://www.w3.org/1999/xlink">
+
+<circle cx=”50" cy=”50" r=”45" fill=”green” id=”foo” o=”foo”/>
+
+<script>alert(“XSS Test”);</script>
+
+<script>alert(document.cookie);</script>
+
 </svg>
